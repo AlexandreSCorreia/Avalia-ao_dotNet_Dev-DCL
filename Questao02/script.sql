@@ -8,20 +8,20 @@ go
 
 CREATE TABLE IF NOT EXISTS PRODUTOS
 ( 
-  IDPRODUTO          smallint identity(1,1)
-, NOME_PROD		     varchar(50)  null
-, PRC_PROD           decimal(10,2) not null
-, constraint pkProdutos primary key (IDPRODUTO)
+	  IDPRODUTO smallint identity(1,1)
+	, NOME_PROD varchar(50)  null
+	, PRC_PROD  decimal(10,2) not null
+	, constraint pkProdutos primary key (IDPRODUTO)
 )
 
 go
 
 CREATE TABLE IF NOT EXISTS CORES
 ( 
-  NOME_COR		varchar(50) not null
-, PRC_COR       decimal(10,2) not null
-, IDPRODUTO     smallint null 
-, constraint fkCores_IDPRODUTO foreign key (IDPRODUTO) references PRODUTOS(IDPRODUTO)
+	  NOME_COR  varchar(50) not null
+	, PRC_COR   decimal(10,2) not null
+	, IDPRODUTO smallint null 
+	, constraint fkCores_IDPRODUTO foreign key (IDPRODUTO) references PRODUTOS(IDPRODUTO)
 )
 
 go
