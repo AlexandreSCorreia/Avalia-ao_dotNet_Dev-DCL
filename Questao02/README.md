@@ -15,7 +15,7 @@
 |--------- |-------- |---------- |
 | Preto    | 5,00    | 1         |
 | Azul     | 10,00   | 1         |
-| Amarelo  | 20,00	 | 3         |
+| Amarelo  | 20,00   | 2         |
 | Chumbo   | 3,00    | 4         |
 
 ##### Elabore o comando SQL que retorne **:
